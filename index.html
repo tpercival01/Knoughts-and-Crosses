@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div id="body">
+      <div id="boardContainer"></div>
+      <div id="playerChoices">
+        <div style="display: flex; margin-left: -10px;">
+          <input type="text" id="playerOne" placeholder="Player name" />
+          <select id="teamChoiceOne">
+            <option>X</option>
+            <option>O</option>
+          </select>
+        </div>
+        <div style="display: flex; margin-left: -10px;">
+          <input type="text" id="playerTwo" placeholder="Player name" />
+          <select id="teamChoiceTwo">
+            <option>X</option>
+            <option>O</option>
+          </select>
+        </div>
+        <button id="startGame">Start game</button>
+      </div>
+    </div>
+
+    <div id="winScreen">
+      <h2>Congratulations, you have won:</h2>
+      <h3 id="playerName"></h3>
+      <button id="restart">Play again</button>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
